@@ -29,6 +29,7 @@ if(isset($_POST['op03'])){
 $mensagem = $_POST['ms'];
 $senha = $_POST['senha'];
 
+
 $arq = $_FILES['arq'];
 
 echo "<p>Nome : $nome </p>";
@@ -39,5 +40,8 @@ echo "<p>Revista : $php  $mysql , $html </p>";
 echo "<p>Mensagem : $mensagem </p>";
 echo "<p>Senha : $senha </p>";
 
-
 print_r($arq);
+
+$pasta = "img/".$arq["name"];
+
+echo "<br>". $pasta;
