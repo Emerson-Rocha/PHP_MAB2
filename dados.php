@@ -43,5 +43,9 @@ echo "<p>Senha : $senha </p>";
 print_r($arq);
 
 $pasta = "img/".$arq["name"];
-
-echo "<br>". $pasta;
+$tmp = $arq["tmp_name"];
+//echo "<br>". $pasta;
+if($arq["erro"]== 0){
+if ( move_uploaded_file($tmp,$pasta) == true){
+     echo "arquivo enviado com sucesso";
+}}
