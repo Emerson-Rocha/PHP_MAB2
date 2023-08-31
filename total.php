@@ -1,6 +1,6 @@
 <?php
-  $pasta = 'img/';
-  print_r ( glob("$pasta{*.jpg,*.pdf}", GLOB_BRACE));
+  $pasta = 'arq/';
+  print_r ( glob("$pasta{*.jpeg,*.pdf}", GLOB_BRACE));
 
 
  $imagem = glob("$pasta{*.jpg,*.pdf}", GLOB_BRACE);
